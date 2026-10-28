@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Channel Uploader — Personal Publishing Tool</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; min-height: 100vh; display: grid; place-items: center;
+    background: #0f1115; color: #e8eaed;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, sans-serif;
+    padding: 2rem;
+  }
+  main { max-width: 44rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .25rem; }
+  .sub { color: #9aa0a6; margin: 0 0 2rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; color: #fff; }
+  p, li { color: #c4c7c5; }
+  ul { padding-left: 1.2rem; }
+  a { color: #8ab4f8; }
+  footer { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid #272a30; color: #9aa0a6; font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Channel Uploader</h1>
+  <p class="sub">A private, single-user tool for publishing videos to one YouTube channel.</p>
+
+  <h2>What it does</h2>
+  <p>
+    Channel Uploader is a personal desktop script that uploads video files the owner already
+    created to the owner's own YouTube channel, with a title, description and optional
+    scheduled publish time. It is not distributed, not offered as a service, and has no users
+    other than the channel owner.
+  </p>
+
+  <h2>How it uses Google data</h2>
+  <ul>
+    <li>Signs in with Google OAuth to identify the channel owner.</li>
+    <li>Uploads video files chosen by the owner to that same channel.</li>
+    <li>Never reads, modifies or deletes anything the owner did not explicitly submit.</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>
+    Credentials stay on the owner's machine. No user data is collected, shared, sold or
+    transmitted to any third party. See the
+    <a href="./privacy.html">privacy policy</a> for details.
+  </p>
+
+  <footer>
+    Personal project · Contact: <span id="contact">owner of this site</span>
+  </footer>
+</main>
+</body>
+</html>
